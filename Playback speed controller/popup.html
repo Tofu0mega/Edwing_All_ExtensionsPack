@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playback Speed Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      button {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin: 0 10px;
+        transition: background-color 0.3s;
+        outline: none;
+      }
+
+      button:hover {
+        background-color: #3E8E41;
+      }
+
+      button:active {
+        transform: translateY(2px);
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="logo" src="icon.png" alt="Playback Speed Extension Logo">
+    <h2>Playback Speed Extension</h2>
+    
+    <div class="button-container">
+      <button id="decreaseButton">-</button>
+      <button id="toggleButton">1.0x</button>
+      <button id="increaseButton">+</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

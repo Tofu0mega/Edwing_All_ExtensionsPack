@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Saver",
+  "description": "A simple extension to save PDF files to a destination folder.",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "index.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "PDF Saver"
+    
+  },
+  
+  "permissions": [
+    "downloads",
+    "fileSystem"
+  ]
+  
+}

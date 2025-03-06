@@ -1,0 +1,19 @@
+{ 
+    "manifest_version": 3,
+    "name": "Focus Hour",
+    "description": "A pomodoro technique focus timer with lofi music.", 
+    "version": "3.2",
+   
+
+    "action": { 
+        "default_icon": "/img/timer.png"
+    },
+
+    "background":{
+        "service_worker": "background.js"
+    },
+
+    "permissions": [
+        "notifications"
+    ]
+}

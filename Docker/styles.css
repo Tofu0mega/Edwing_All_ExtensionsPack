@@ -1,0 +1,36 @@
+body {
+	background-image: url('bgrnd.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Arial, sans-serif;
+	color: #333;
+}
+
+#dropbox {
+	position: relative;
+	z-index: 1;
+	border: 2px dashed #6c5ce7;
+	padding: 40px;
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 50px auto;
+	box-sizing: border-box;
+	background-color: #fff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease-in-out;
+}
+
+#dropbox:hover {
+	background-color: #f1f1f1;
+}
+
+#dropbox h1 {
+	color: #6c5ce7;
+}
+
+#dropbox p {
+	color: #999;
+}

@@ -1,0 +1,107 @@
+<!--
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>Mini Player</title>
+    <script src="main.js"></script>
+
+
+    <style>
+        body {
+      background-color: hsl(192, 45%, 98%);
+      font-family: Arial, sans-serif;
+    }
+    #search-form {
+      margin: 20px;
+      text-align: center;
+    }
+    #search-query {
+      width: 400px;
+      height: 30px;
+      font-size: 16px;
+      padding: 5px;
+    }
+    #search-results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    .video-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      width: 250px;
+      cursor: pointer;
+    }
+    .video-item img {
+      width: 250px;
+      height: 140px;
+    }
+    .video-item .title {
+      margin-top: 5px;
+      font-size: 14px;
+      text-align: center;
+    }
+    </style>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('serviceworker.js');
+      }
+    </script>
+    
+
+    <script>
+    google.load('search', '1');
+    function searchVideos() {
+    var query = document.getElementById('search-query').value;
+    var search = new google.search.VideoSearch();
+    search.setResultSetSize(10);
+    search.setSearchCompleteCallback(this, function() {
+      var results = search.results;
+      var videos = '';
+      for (var i = 0; i < results.length; i++) {
+      var video = results[i];
+      videos += '<div><h3>' + video.titleNoFormatting + '</h3>' +
+            '<div><a href="' + video.url + '">' +
+            '<img src="' + video.tbUrl + '"></a></div>' +
+            '<p>' + video.content + '</p></div>';
+      }
+      document.getElementById('videos').innerHTML = videos;
+    })};
+    search.execute(query);
+    </script>
+     <body>
+      <h1>YouTube Video Search</h1>
+      <input type="text" id="search-query" placeholder="Search for videos">
+      <button onclick="searchVideos()">Search</button>
+      <div id="videos"></div>
+    
+  </body>
+  </head>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YouTube Search</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap">
+
+    <link href="mini.css" rel="stylesheet">
+      
+   
+  </head>
+  <body>
+    <h1>Ready to expand your horizons?</h1>
+    <input type="text" id="search-input" placeholder="Search...">
+    <button id="search-button">Search</button>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
